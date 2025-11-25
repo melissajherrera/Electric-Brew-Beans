@@ -1,0 +1,106 @@
+.cafes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.cafe-card {
+  background: #ffffff;
+  color: #000;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: 0.35s ease;
+  border: 2px solid transparent;
+}
+
+.cafe-card:hover {
+  transform: translateY(-6px);
+  border-color: #c029e3;
+}
+
+.cafe-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+
+.cafe-card.card-disabled {
+  opacity: 0.5; /* Desvanecer la tarjeta */
+  filter: grayscale(80%); /* escala de grises */
+  cursor: not-allowed; /* Cambiar el cursor */
+  pointer-events: none; /* Deshabilitar clics en toda la tarjeta */
+  transition: none; 
+}
+
+
+.sin-stock {
+  color: #FF6B6B; 
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  margin: 10px 0;
+  background-color: #330000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #6b4226;
+  margin-top: 1rem;
+}
+
+.btn-add {
+  width: 100%;
+  background: #c029e3;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.pulse {
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+.btn-add:hover {
+  transform: scale(1.12);
+  background: #d854ff;
+}
+
+.btn-ver {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #6b4226;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btn-ver:hover {
+  background: #8a5a3a;
+}

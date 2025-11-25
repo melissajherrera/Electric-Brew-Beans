@@ -1,0 +1,59 @@
+/* 🛒 Carrito flotante con glow */
+.floating-cart {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 62px;
+  height: 62px;
+
+  background: linear-gradient(145deg, #bb86fc, #6f3fbf);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  color: black;
+  z-index: 9999;
+
+  transition: 0.3s ease;
+  animation: floatGlow 2.4s infinite alternate ease;
+}
+
+.floating-cart:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 28px rgba(187, 134, 252, 1);
+}
+
+.floating-icon {
+  font-size: 1.8rem;
+}
+
+/* 🔢 Contador */
+.floating-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  background: #ff4081;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 64, 129, 0.8);
+}
+
+/* ✨ Animación */
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 16px rgba(187, 134, 252, 0.7);
+  }
+  100% {
+    transform: translateY(-6px);
+    box-shadow: 0 0 28px rgba(187, 134, 252, 1);
+  }
+}

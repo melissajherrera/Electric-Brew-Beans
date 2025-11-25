@@ -1,0 +1,105 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+/* IMAGEN MÁS GRANDE (Nº10) */
+.detail-img-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-img.big {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+/* Efecto suave al pasar */
+.detail-img.big:hover {
+  transform: scale(1.03);
+}
+
+/* PANEL PREMIUM */
+.detail-info {
+  flex: 1;
+  background: rgba(255,255,255,0.1);
+  padding: 2.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.detail-title {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.detail-description {
+  color: #e8e8e8;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.detail-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff9df9;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* FICHA TÉCNICA */
+.ficha {
+  background: rgba(0,0,0,0.25);
+  padding: 1.3rem;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+}
+
+.ficha h3 {
+  margin-bottom: 1rem;
+  color: #ffd6ff;
+}
+
+/* BOTÓN MARRÓN PREMIUM (Nº9) */
+.detail-btn.brown {
+  padding: 1rem 2.2rem;
+  background: #6b4226;   /* marrón cafetería */
+  border: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.detail-btn.brown:hover {
+  background: #8a5a3a;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .detail-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-description {
+    text-align: center;
+  }
+}

@@ -1,0 +1,75 @@
+.footer-container {
+  background: linear-gradient(180deg, rgba(12, 0, 25, 0.85), #0b0015 95%);
+  padding: 40px 5%;
+  color: #d4d4d4;
+  border-top: 1px solid rgba(187, 134, 252, 0.25);
+  font-family: inherit;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+/* -------- SECCIONES -------- */
+.footer-section {
+  min-width: 250px;
+}
+
+.footer-title {
+  color: #c99bff;
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+  text-shadow: 0 0 6px rgba(187, 134, 252, 0.7);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+/* -------- ENLACES -------- */
+.footer-link {
+  color: #03dac6;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+  text-shadow: 0 0 8px rgba(3, 218, 198, 1);
+}
+
+/* -------- ICONOS -------- */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.social-icon {
+  color: white;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.18);
+  text-shadow: 0 0 12px rgba(187, 134, 252, 0.9);
+}
+
+/* -------- COPYRIGHT -------- */
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #888;
+  font-size: 0.85rem;
+}

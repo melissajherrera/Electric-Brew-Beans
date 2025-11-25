@@ -1,0 +1,46 @@
+/* 💬 WHATSAPP FLOTANTE GALÁCTICO */
+.floating-wpp {
+  position: fixed;
+  bottom: 110px; /* queda arriba del carrito */
+  right: 25px;
+
+  width: 62px;
+  height: 62px;
+
+  border-radius: 50%;
+  background: linear-gradient(145deg, #bb86fc, #8b5cff);
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  z-index: 9999;
+  transition: 0.3s ease;
+
+  animation: wppFloat 2.6s infinite ease-in-out alternate;
+}
+
+.floating-wpp:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 30px rgba(187, 134, 252, 1);
+}
+
+.floating-wpp-icon {
+  font-size: 2rem;
+}
+
+/* ✨ Animación suave de flotación */
+@keyframes wppFloat {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 18px rgba(187, 134, 252, 0.7);
+  }
+  100% {
+    transform: translateY(-8px);
+    box-shadow: 0 0 28px rgba(187, 134, 252, 1);
+  }
+}

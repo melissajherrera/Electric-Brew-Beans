@@ -1,0 +1,303 @@
+/* ===========================
+   CONTENEDOR GENERAL
+=========================== */
+.cart-container {
+  max-width: 950px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ===========================
+   TITULO
+=========================== */
+.cart-title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: 0 0 12px #bb86fc;
+}
+
+.cart-empty {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+/* ===========================
+   ITEMS
+=========================== */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  transition: 0.25s ease;
+  position: relative;
+}
+
+.cart-item:hover {
+  transform: translateX(8px);
+}
+
+.cart-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 1.2rem;
+}
+
+/* INFO */
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #260d2b;
+}
+
+.cart-info p {
+  margin: 0.3rem 0 0 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4b1d55;
+}
+
+/* ===========================
+   BOTÓN ELIMINAR
+=========================== */
+.cart-delete {
+  background: #c029e3;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.cart-delete:hover {
+  background: #ea68ff;
+  transform: scale(1.1);
+}
+
+/* ===========================
+   TOTAL Y BOTONES
+=========================== */
+.cart-total-box {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.cart-total {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffb3fe;
+  text-shadow: 0 0 8px #ff9bf7;
+  margin-bottom: 1.5rem;
+}
+
+.cart-clear,
+.cart-pay {
+  background: #bb86fc;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 14px;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.25s ease;
+}
+
+.cart-clear {
+  background: #ff2b68;
+  color: white;
+}
+
+.cart-clear:hover {
+  background: #ff5c8a;
+  transform: scale(1.07);
+}
+
+.cart-pay:hover {
+  background: #e6c9ff;
+  transform: scale(1.07);
+}
+
+/* ===========================
+   MODAL
+=========================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-box {
+  background: #180b2e;
+  padding: 2rem;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 380px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.6);
+}
+
+/* ===========================
+   FORMULARIO
+=========================== */
+.form-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.form-pago input {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-pago input::placeholder {
+  color: #c9c9c9;
+}
+
+/* ===========================
+   BOTONES MODAL
+=========================== */
+.btn-confirmar {
+  width: 100%;
+  padding: 0.8rem;
+  background: #bb86fc;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn-confirmar:hover {
+  background: #dcbcff;
+}
+
+.btn-cerrar {
+  width: 100%;
+  padding: 0.8rem;
+  background: #ff4b8b;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-cerrar:hover {
+  background: #ff7fb0;
+}
+
+.pago-ok {
+  color: #bbffcc;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+/* ===========================
+   TICKET FINAL
+=========================== */
+.ticket-final p {
+  margin: 0.3rem 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* ===========================
+   SUMAR / RESTAR
+=========================== */
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.7rem;
+}
+
+.qty-btn {
+  background: #c029e3;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.qty-btn:hover {
+  background: #ea68ff;
+  transform: scale(1.1);
+}
+
+.qty-number {
+  font-size: 1.2rem;
+  color: #260d2b;
+  font-weight: bold;
+}
+
+.subtotal {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #4b1d55;
+  font-weight: bold;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 650px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.3rem;
+  }
+
+  .cart-delete {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+
+  .cart-img {
+    margin-bottom: 1rem;
+  }
+}
